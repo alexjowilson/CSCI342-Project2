@@ -1,4 +1,14 @@
 # CSCI342-Project2
 
 
-Folder: https://drive.google.com/drive/u/1/folders/1EtxY63S1YR3eTvoBFVTBRaKKeJFGnnzo
+Documentation: https://drive.google.com/drive/u/1/folders/1EtxY63S1YR3eTvoBFVTBRaKKeJFGnnzo
+
+## Getting Started
+
+1. Install NodeJS
+https://nodejs.org/en/download/ - Find the Installer for Your OS
+[NodeJS](https://nodejs.org/en/download/)
+2. Install Project Dependencies
+'''npm install''' 
+3. Run Project
+'''node index.js'''
