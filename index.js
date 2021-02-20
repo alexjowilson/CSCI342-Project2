@@ -8,7 +8,7 @@ const app = express()                                   // create instance of ex
 app.set('view engine', 'ejs')                           // set ejs to be the view engine for the app
 app.use(express.static(__dirname + '/public'));         // indicate the directory with public facing resources
 
-
+const PORT = 3000;          // express server port number
 const MAX_UPLOAD_SIZE = 10; // max file size that the server will accept.
 
 
@@ -32,5 +32,41 @@ const upload = multer({
         }
 }).single('myImage');
 
+// check upload file type
+function checkFileType(file, cb){
+        const filetypes = /jpeg|png|jpg|gif/;
+        var mimetype = filetypes.test(file.mimetype);
+        var filetype = filetypes.test(path.extname(file.originalname).toLowerCase());
+        if(mimetype && filetype){
+                return cb(null,true);
+        }
+        else{
+                console.log("Error this filetype: "+filetype+" is invalid. Upload images only please!")
+                cb("Error, upload images only please!");
+        }
+}
 
 
+
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+app.get('/', (req, res) => res.render('index',{msg: "Hello, World!"}));
+app.post('/upload', (req, res) =>{
+        upload(req, res, (err) => {
+            if(err){
+                res.render('index', {
+                        msg:err
+                });
+            }
+            else if(req.file == undefined){
+                res.render('index', {
+                        msg: 'Error: No file selected!'
+                });
+            }
+            else{
+                res.render('index', {
+                        msg: 'File Uploaded!',
+                        file: `uploads/${req.file.filename}`
+                });    
+            }    
+        });
+});
