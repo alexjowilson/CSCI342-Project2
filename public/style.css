@@ -1,3 +1,117 @@
-body{
-    color: red;
+/* google font maybe */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: #4a525a;
+}
+
+/* global variables */
+:root {
+    --bodyColor: #4a525a;
+    --textcolor: #fff;
+    --linkColor: red;
+}
+
+
+.box{
+    border: 0;
+    width: 720px;
+    height: auto;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+
+/* Banner styling */
+.banner {
+    width: 300px;
+    height: auto;
+    border: 0px dotted #606870;
+    padding: 0;
+    margin: 59px 12px 69px 41px;
+    text-align: left;
+    background-color: transparent;
+    line-height: 0px;
+}
+.banner a{
+    border-width: 0px;
+}
+.banner a:link{
+    text-decoration: none;
+    color: #ddd;
+    border-color: #888;
+    border-width: 0 0 1px 0;
+    border-style: none none solid none;
+    padding: 3px 0px 2px 0px;
+    background-color: inherit;
+}
+
+/* side-nav styling */
+.side-nav{
+    top: 198px;
+    margin: 0;
+    position: absolute;
+    width: 160px;
+    height: auto;
+    border: 0px dotted gray;
+    padding: 5px 0 0 0;
+    background-color: transparent;
+    color: #eee;
+    text-align: right;
+    line-height: 1em;
+}
+.side-nav p{
+    padding: 0;
+    letter-spacing: 2px;
+    margin: 0 0 5em -3em;
+}
+.side-nav strong{
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.side-nav ul{
+    margin: 0 0 5em -4em;
+    list-style-type: square;
+    padding-left: 1.25em;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 50px;
+}
+.side-nav li{
+    list-style: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+
+.side-nav .SidebarMartini{
+    border: 0;
+    margin: 10em 0 0 2em;
+    padding: 0;
+    font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+    font-size: 11px;
+}
+.side-nav .SidebarMartini p{
+    margin: 8px 0 0 -26px;
+    width: 165px;
+    color: #ccc;
+    letter-spacing: normal;
+    line-height: 1.7em;
+}
+
+.side-nav a{
+    color: #eee;
+    padding: 4px 1px 4px 1px;
+    text-decoration: none; 
+}
+.side-nav a:link{
+    color: #eee;
+    border: 0;
 }
