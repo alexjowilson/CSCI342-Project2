@@ -50,6 +50,7 @@ function checkFileType(file, cb){
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 app.get('/', (req, res) => res.render('index',{msg: "Hello, World!"}));
+app.get('/searchYourself.ejs', (req, res) => res.render('searchYourself'))
 app.post('/upload', (req, res) =>{
         upload(req, res, (err) => {
             if(err){
