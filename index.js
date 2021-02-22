@@ -8,7 +8,7 @@ const app = express()                                   // create instance of ex
 app.set('view engine', 'ejs')                           // set ejs to be the view engine for the app
 app.use(express.static(__dirname + '/public'));         // indicate the directory with public facing resources
 
-const PORT = 3000;          // express server port number
+const PORT = 3001;          // express server port number
 const MAX_UPLOAD_SIZE = 10; // max file size that the server will accept.
 
 
