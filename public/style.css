@@ -114,8 +114,8 @@
     border: 0;
 }
 
-/* File Upload Styling */
-.FileUpload{
+/* main Styling */
+.main{
     padding: 0px;
     border: 0px dotted gray;
     position: relative;
@@ -124,4 +124,22 @@
     margin-bottom: 0px;
     margin-top: 0px;
     width: 425px;
+}
+.linkedlist{
+    color: #eee;
+    border-width: 0 0 0px 0;
+    border-style: solid;
+    border-color: #666;
+    padding-bottom: 0em;
+}
+.linkedlist dt{
+    margin-bottom: 1em;
+}
+
+.FileUpload{
+    text-align: center;
+}
+
+.FileUpload h1{
+    color: #111;
 }
