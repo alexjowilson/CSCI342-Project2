@@ -26,7 +26,6 @@
     text-align: left;
 }
 
-
 /* Banner styling */
 .banner {
     width: 300px;
@@ -90,7 +89,6 @@
     margin: 0 0 1em 0;
     padding: 0;
 }
-
 .side-nav .SidebarMartini{
     border: 0;
     margin: 10em 0 0 2em;
@@ -114,4 +112,16 @@
 .side-nav a:link{
     color: #eee;
     border: 0;
+}
+
+/* File Upload Styling */
+.FileUpload{
+    padding: 0px;
+    border: 0px dotted gray;
+    position: relative;
+    margin-left: 222px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 425px;
 }
