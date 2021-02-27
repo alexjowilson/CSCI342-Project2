@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>testing file uploading drag and drop design</title>
         <link rel="stylesheet" href="test.css">
         <script type = "text/javascript" src = "../test.js"></script> 
@@ -8,6 +9,13 @@
 
     <body>
         <div id="uploadloc"></div>
-        <div class="droparea" id="droparea">drag and drop and image of yourself.</div>
+        <div class="droparea" id="droparea" ondragover="Highlight(event)"
+                                            ondragleave="Unhighlight(event)"
+                                            ondrop="Take(event)">drag and drop an image of yourself.</div>
     </body>
+
+    <script>
+        GetDropArea();
+    </script>
+
 </html>

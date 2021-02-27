@@ -22,8 +22,10 @@ html, body {
     height: 100%;
 }
 
+
+
 .droparea {
-    border: 2px dashed #d2d6da;
+    --border: 2px dashed #d2d6da;
     color: #ccc;
     background-color: #444d53;
     font-size: larger;
@@ -34,14 +36,14 @@ html, body {
     margin: auto;
 }
 
-.droparea.ondragover {
+.droparea.highlight {
     color: white;
-    border-color: white;
+    --border-color: white;
     background-color: #525d65;
 }
 
-.droparea.ondragleave {
+.droparea.unhighlight {
     color: #ccc;
-    border-color: #d2d6da;
+    --border-color: #d2d6da;
     background-color: #444d53;
 }
