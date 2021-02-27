@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: #4a525a;
+}
+
+/* global variables */
+:root {
+    --bodyColor: #4a525a;
+    --textcolor: #fff;
+    --linkColor: red;
+    --borderColor: #d2d6da;
+    --draganddropbackgroundColor: #444d53;
+    --ondragoverColor: #525d65;
+}
+
+html, body {
+    height: 100%;
+}
+
+.droparea {
+    border: 2px dashed #d2d6da;
+    color: #ccc;
+    background-color: #444d53;
+    font-size: larger;
+    width: 400px;
+    text-align: center;
+    height: 400px;
+    line-height:400px;
+    margin: auto;
+}
+
+.droparea.ondragover {
+    color: white;
+    border-color: white;
+    background-color: #525d65;
+}
+
+.droparea.ondragleave {
+    color: #ccc;
+    border-color: #d2d6da;
+    background-color: #444d53;
+}
