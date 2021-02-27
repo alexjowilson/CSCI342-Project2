@@ -1,7 +1,7 @@
 /* google font maybe */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -133,7 +133,9 @@
     padding-bottom: 0em;
 }
 .linkedlist dt{
-    margin-bottom: 1em;
+    margin-bottom: 5em;
+    margin-top: 2em;
+    font-family: 'Roboto', sans-serif;
 }
 
 .FileUpload{
@@ -141,5 +143,8 @@
 }
 
 .FileUpload h1{
-    color: #111;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
 }
