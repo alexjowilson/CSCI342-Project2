@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Search Yourself</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,7 +18,7 @@
 
         <div class="banner" id="banner">
             <a href="/" title="Search Yourself: Home">
-                <img src="../public/searchYourself.png" alt="Search Yourself" height="56">
+                <img src="searchYourself.png" alt="Search Yourself" height="56">
             </a>
         </div>
 
@@ -43,7 +43,7 @@
 
             <div class="SidebarMartini" id="SidebarMartini">
                 <a href="https://www.goat.com/">
-                    <img src="../public/uzi.jpg" height="90">
+                    <img src="uzi.jpg" height="90">
                 </a>
                 <p> 
                     <a href="https://www.goat.com">Lil Uzi Vert</a>
@@ -82,15 +82,18 @@
         <!--Footer section -->
         <div class="footer" id="footer">
 
-            <form id="SiteSearch" action="https://google.com" method="get" style="margin-bottom: 2.5em;">
-                <div>
+            <form class="SiteSearch" id="SiteSearch" action="https://google.com" method="get" style="margin-bottom: 2.5em;">
+                <div class="search" id="search">
                     <input name="q" type="text" value="" style="margin-right: 8px; width: 66%;">
                     <input type="submit" value="Search">
                 </div>
             </form> 
+            <br>
+            <br>
 
-
-
+            <p class="smallprint">
+                Copyright <span class="far fa-copyright"></span> <strong>The Boyz</strong> 2021 All rights reserved. 
+            </p>
         </div>
 
 
