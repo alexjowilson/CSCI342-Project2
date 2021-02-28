@@ -8,7 +8,8 @@ const app = express()                                   // create instance of ex
 app.set('view engine', 'ejs')                           // set ejs to be the view engine for the app
 app.use(express.static(__dirname + '/public'));         // indicate the directory with public facing resources
 
-const PORT = 3000;          // express server port number
+
+const PORT = process.env.PORT || 3001  // express server port number         
 const MAX_UPLOAD_SIZE = 10; // max file size that the server will accept.
 
 
@@ -49,9 +50,10 @@ function checkFileType(file, cb){
 
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
-app.get('/', (req, res) => res.render('index',{msg: ""}));
-app.get('/searchYourself.ejs', (req, res) => res.render('searchYourself'))
-app.post('/upload', (req, res) => {
+
+app.get('/', (req, res) => res.render('index'));
+
+app.post('/upload', (req, res) =>{
         upload(req, res, (err) => {
             if(err){
                 res.render('index', {
@@ -60,15 +62,13 @@ app.post('/upload', (req, res) => {
             }
             else if(req.file == undefined){
                 res.render('index', {
-                        msg: 'Error: No file selected!',
-                        data: 'this could be a url but you are playing'
+                        msg: 'Error: No file selected!'
                 });
             }
             else{
                 res.render('index', {
                         msg: 'File Uploaded!',
-                        file: `uploads/${req.file.filename}`,
-                        data: 'pretend this is a url'
+                        file: `uploads/${req.file.filename}`
                 });    
             }    
         });
