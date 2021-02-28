@@ -11,3 +11,5 @@ https://nodejs.org/en/download/ - Find the Installer for Your OS
 ```npm install``` 
 3. Run Project<br />
 ```node index.js```
+4. View app in browser <br/>
+```http://localhost:3000/```
