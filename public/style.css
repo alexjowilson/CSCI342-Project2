@@ -147,7 +147,6 @@
 .FileUpload{
     text-align: right;
 }
-
 .FileUpload h1{
     color: #eee;
     font-family: 'Roboto', sans-serif;
@@ -155,6 +154,10 @@
     padding-top: 10%;
     text-align: center;
 }
+.FileUpload form .file-field .btn span{
+    font-weight: bold;
+}
+
 
 /* Footer Styling */
 .footer{

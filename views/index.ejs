@@ -37,14 +37,11 @@
                 <li>
                     <a href="#" title="Home Page">Home Page</a>
                 </li>
-                <!-- <li>
-                    <a href="searchYourself.ejs" title="Search Yourself">Search Yourself</a>
-                </li> -->
                 <li>
                     <a href="#" title="Mission">Our Mission</a>
                 </li>
                 <li>
-                    <a href="#" title="Contact">Contact Us</a>
+                    <a href="/contactUs.ejs" title="Contact">Contact Us</a>
                 </li>
             </ul>
 
@@ -71,7 +68,7 @@
                     <%= typeof msg != 'undefined' ? msg : '' %>
                     <form action="/upload" method="POST" enctype="multipart/form-data">
                         <div class="file-field input-field">
-                            <div class="btn grey">
+                            <div class="btn">
                                 <span>File</span>
                                 <input name="myImage" type="file">
                             </div>
