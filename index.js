@@ -49,9 +49,9 @@ function checkFileType(file, cb){
 
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
-app.get('/', (req, res) => res.render('index',{msg: "Hello, World!"}));
+app.get('/', (req, res) => res.render('index',{msg: ""}));
 app.get('/searchYourself.ejs', (req, res) => res.render('searchYourself'))
-app.post('/upload', (req, res) =>{
+app.post('/upload', (req, res) => {
         upload(req, res, (err) => {
             if(err){
                 res.render('index', {
@@ -60,13 +60,15 @@ app.post('/upload', (req, res) =>{
             }
             else if(req.file == undefined){
                 res.render('index', {
-                        msg: 'Error: No file selected!'
+                        msg: 'Error: No file selected!',
+                        data: 'this could be a url but you are playing'
                 });
             }
             else{
                 res.render('index', {
                         msg: 'File Uploaded!',
-                        file: `uploads/${req.file.filename}`
+                        file: `uploads/${req.file.filename}`,
+                        data: 'pretend this is a url'
                 });    
             }    
         });

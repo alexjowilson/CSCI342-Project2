@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/1b300db394.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="shortcut icon" href="#">
 </head>
 
 <body>
@@ -30,7 +31,11 @@
           </div>
         </div>
         <button type="submit" class="btn">Submit</button>
-    </form>    
+    </form>
+    <script>
+      var data = <% typeof msg != 'undefined' ? msg : ''%>;
+      console.log(data);
+    </script>    
 </div>
 
 </body>
