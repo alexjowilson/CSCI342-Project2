@@ -145,7 +145,7 @@
 
 /* FileUpload Styling */
 .FileUpload{
-    text-align: center;
+    text-align: right;
 }
 
 .FileUpload h1{
@@ -153,6 +153,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     padding-top: 10%;
+    text-align: center;
 }
 
 /* Footer Styling */
@@ -170,7 +171,8 @@
     width: 66%;
     margin-bottom: 2.5em;
 }
-.footer form .search input{
+.footer form .search input, 
+.main .FileUpload form input{
     background-color: #ddd;
     font-size: 1em;
     font-family: 'Verdana', "Bitstream Vera Sans", sans-serif;
